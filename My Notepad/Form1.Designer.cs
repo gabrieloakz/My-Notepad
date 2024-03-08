@@ -121,6 +121,7 @@
             this.menuFicheiroNovo.Name = "menuFicheiroNovo";
             this.menuFicheiroNovo.Size = new System.Drawing.Size(194, 36);
             this.menuFicheiroNovo.Text = "Novo";
+            this.menuFicheiroNovo.Click += new System.EventHandler(this.menuFicheiroNovo_Click);
             // 
             // menuFicheiroAbrir
             // 

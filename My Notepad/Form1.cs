@@ -12,9 +12,15 @@ namespace My_Notepad
 {
     public partial class Form1 : Form
     {
+        private string ficheiro = "";
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void menuFicheiroNovo_Click(object sender, EventArgs e)
+        {
+            VerificarAlteracoes
         }
     }
 }
