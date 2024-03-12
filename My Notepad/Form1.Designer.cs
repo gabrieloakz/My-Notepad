@@ -31,24 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.menuFicheiro = new System.Windows.Forms.ToolStripSplitButton();
-            this.menuEditar = new System.Windows.Forms.ToolStripSplitButton();
-            this.menuFormatar = new System.Windows.Forms.ToolStripSplitButton();
             this.menuFicheiroNovo = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFicheiroAbrir = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFicheiroGuardar = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuFicheiroSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuEditar = new System.Windows.Forms.ToolStripSplitButton();
             this.menuEditarCortar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuEditarCopiar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuEditarColar = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuEditarSelecionar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuEditarProcurar = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuFormatar = new System.Windows.Forms.ToolStripSplitButton();
             this.menuFormatarLetra = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFormatarCores = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuFormatarAlinhamento = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFormatarCoresLetra = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFormatarCoresFundo = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.menuFormatarAlinhamento = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFormatarAlinhamentoEsquerda = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFormatarAlinhamentoCentro = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFormatarAlinhamentoDireita = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,6 +88,43 @@
             this.menuFicheiro.Size = new System.Drawing.Size(95, 34);
             this.menuFicheiro.Text = "Ficheiro";
             // 
+            // menuFicheiroNovo
+            // 
+            this.menuFicheiroNovo.Image = ((System.Drawing.Image)(resources.GetObject("menuFicheiroNovo.Image")));
+            this.menuFicheiroNovo.Name = "menuFicheiroNovo";
+            this.menuFicheiroNovo.Size = new System.Drawing.Size(194, 36);
+            this.menuFicheiroNovo.Text = "Novo";
+            this.menuFicheiroNovo.Click += new System.EventHandler(this.menuFicheiroNovo_Click);
+            // 
+            // menuFicheiroAbrir
+            // 
+            this.menuFicheiroAbrir.Image = ((System.Drawing.Image)(resources.GetObject("menuFicheiroAbrir.Image")));
+            this.menuFicheiroAbrir.Name = "menuFicheiroAbrir";
+            this.menuFicheiroAbrir.Size = new System.Drawing.Size(194, 36);
+            this.menuFicheiroAbrir.Text = "Abrir";
+            this.menuFicheiroAbrir.Click += new System.EventHandler(this.menuFicheiroAbrir_Click);
+            // 
+            // menuFicheiroGuardar
+            // 
+            this.menuFicheiroGuardar.Image = ((System.Drawing.Image)(resources.GetObject("menuFicheiroGuardar.Image")));
+            this.menuFicheiroGuardar.Name = "menuFicheiroGuardar";
+            this.menuFicheiroGuardar.Size = new System.Drawing.Size(194, 36);
+            this.menuFicheiroGuardar.Text = "Guardar";
+            this.menuFicheiroGuardar.Click += new System.EventHandler(this.menuFicheiroGuardar_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(191, 6);
+            // 
+            // menuFicheiroSair
+            // 
+            this.menuFicheiroSair.Image = ((System.Drawing.Image)(resources.GetObject("menuFicheiroSair.Image")));
+            this.menuFicheiroSair.Name = "menuFicheiroSair";
+            this.menuFicheiroSair.Size = new System.Drawing.Size(194, 36);
+            this.menuFicheiroSair.Text = "Sair";
+            this.menuFicheiroSair.Click += new System.EventHandler(this.menuFicheiroSair_Click);
+            // 
             // menuEditar
             // 
             this.menuEditar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -103,6 +140,51 @@
             this.menuEditar.Size = new System.Drawing.Size(83, 34);
             this.menuEditar.Text = "Editar";
             // 
+            // menuEditarCortar
+            // 
+            this.menuEditarCortar.Image = ((System.Drawing.Image)(resources.GetObject("menuEditarCortar.Image")));
+            this.menuEditarCortar.Name = "menuEditarCortar";
+            this.menuEditarCortar.Size = new System.Drawing.Size(194, 36);
+            this.menuEditarCortar.Text = "Cortar";
+            this.menuEditarCortar.Click += new System.EventHandler(this.menuEditarCortar_Click);
+            // 
+            // menuEditarCopiar
+            // 
+            this.menuEditarCopiar.Image = ((System.Drawing.Image)(resources.GetObject("menuEditarCopiar.Image")));
+            this.menuEditarCopiar.Name = "menuEditarCopiar";
+            this.menuEditarCopiar.Size = new System.Drawing.Size(194, 36);
+            this.menuEditarCopiar.Text = "Copiar";
+            this.menuEditarCopiar.Click += new System.EventHandler(this.menuEditarCopiar_Click);
+            // 
+            // menuEditarColar
+            // 
+            this.menuEditarColar.Image = ((System.Drawing.Image)(resources.GetObject("menuEditarColar.Image")));
+            this.menuEditarColar.Name = "menuEditarColar";
+            this.menuEditarColar.Size = new System.Drawing.Size(194, 36);
+            this.menuEditarColar.Text = "Colar";
+            this.menuEditarColar.Click += new System.EventHandler(this.menuEditarColar_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(153, 6);
+            // 
+            // menuEditarSelecionar
+            // 
+            this.menuEditarSelecionar.Image = ((System.Drawing.Image)(resources.GetObject("menuEditarSelecionar.Image")));
+            this.menuEditarSelecionar.Name = "menuEditarSelecionar";
+            this.menuEditarSelecionar.Size = new System.Drawing.Size(194, 36);
+            this.menuEditarSelecionar.Text = "Selecionar tudo";
+            this.menuEditarSelecionar.Click += new System.EventHandler(this.menuEditarSelecionar_Click);
+            // 
+            // menuEditarProcurar
+            // 
+            this.menuEditarProcurar.Image = ((System.Drawing.Image)(resources.GetObject("menuEditarProcurar.Image")));
+            this.menuEditarProcurar.Name = "menuEditarProcurar";
+            this.menuEditarProcurar.Size = new System.Drawing.Size(194, 36);
+            this.menuEditarProcurar.Text = "Procurar";
+            this.menuEditarProcurar.Click += new System.EventHandler(this.menuEditarProcurar_Click);
+            // 
             // menuFormatar
             // 
             this.menuFormatar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -115,76 +197,13 @@
             this.menuFormatar.Size = new System.Drawing.Size(101, 34);
             this.menuFormatar.Text = "Formatar";
             // 
-            // menuFicheiroNovo
-            // 
-            this.menuFicheiroNovo.Image = ((System.Drawing.Image)(resources.GetObject("menuFicheiroNovo.Image")));
-            this.menuFicheiroNovo.Name = "menuFicheiroNovo";
-            this.menuFicheiroNovo.Size = new System.Drawing.Size(194, 36);
-            this.menuFicheiroNovo.Text = "Novo";
-            this.menuFicheiroNovo.Click += new System.EventHandler(this.menuFicheiroNovo_Click);
-            // 
-            // menuFicheiroAbrir
-            // 
-            this.menuFicheiroAbrir.Image = ((System.Drawing.Image)(resources.GetObject("menuFicheiroAbrir.Image")));
-            this.menuFicheiroAbrir.Name = "menuFicheiroAbrir";
-            this.menuFicheiroAbrir.Size = new System.Drawing.Size(194, 36);
-            this.menuFicheiroAbrir.Text = "Abrir";
-            // 
-            // menuFicheiroGuardar
-            // 
-            this.menuFicheiroGuardar.Image = ((System.Drawing.Image)(resources.GetObject("menuFicheiroGuardar.Image")));
-            this.menuFicheiroGuardar.Name = "menuFicheiroGuardar";
-            this.menuFicheiroGuardar.Size = new System.Drawing.Size(194, 36);
-            this.menuFicheiroGuardar.Text = "Guardar";
-            // 
-            // menuFicheiroSair
-            // 
-            this.menuFicheiroSair.Image = ((System.Drawing.Image)(resources.GetObject("menuFicheiroSair.Image")));
-            this.menuFicheiroSair.Name = "menuFicheiroSair";
-            this.menuFicheiroSair.Size = new System.Drawing.Size(194, 36);
-            this.menuFicheiroSair.Text = "Sair";
-            // 
-            // menuEditarCortar
-            // 
-            this.menuEditarCortar.Image = ((System.Drawing.Image)(resources.GetObject("menuEditarCortar.Image")));
-            this.menuEditarCortar.Name = "menuEditarCortar";
-            this.menuEditarCortar.Size = new System.Drawing.Size(194, 36);
-            this.menuEditarCortar.Text = "Cortar";
-            // 
-            // menuEditarCopiar
-            // 
-            this.menuEditarCopiar.Image = ((System.Drawing.Image)(resources.GetObject("menuEditarCopiar.Image")));
-            this.menuEditarCopiar.Name = "menuEditarCopiar";
-            this.menuEditarCopiar.Size = new System.Drawing.Size(194, 36);
-            this.menuEditarCopiar.Text = "Copiar";
-            // 
-            // menuEditarColar
-            // 
-            this.menuEditarColar.Image = ((System.Drawing.Image)(resources.GetObject("menuEditarColar.Image")));
-            this.menuEditarColar.Name = "menuEditarColar";
-            this.menuEditarColar.Size = new System.Drawing.Size(194, 36);
-            this.menuEditarColar.Text = "Colar";
-            // 
-            // menuEditarSelecionar
-            // 
-            this.menuEditarSelecionar.Image = ((System.Drawing.Image)(resources.GetObject("menuEditarSelecionar.Image")));
-            this.menuEditarSelecionar.Name = "menuEditarSelecionar";
-            this.menuEditarSelecionar.Size = new System.Drawing.Size(194, 36);
-            this.menuEditarSelecionar.Text = "Selecionar tudo";
-            // 
-            // menuEditarProcurar
-            // 
-            this.menuEditarProcurar.Image = ((System.Drawing.Image)(resources.GetObject("menuEditarProcurar.Image")));
-            this.menuEditarProcurar.Name = "menuEditarProcurar";
-            this.menuEditarProcurar.Size = new System.Drawing.Size(194, 36);
-            this.menuEditarProcurar.Text = "Procurar";
-            // 
             // menuFormatarLetra
             // 
             this.menuFormatarLetra.Image = ((System.Drawing.Image)(resources.GetObject("menuFormatarLetra.Image")));
             this.menuFormatarLetra.Name = "menuFormatarLetra";
             this.menuFormatarLetra.Size = new System.Drawing.Size(194, 36);
             this.menuFormatarLetra.Text = "Letra";
+            this.menuFormatarLetra.Click += new System.EventHandler(this.menuFormatarLetra_Click);
             // 
             // menuFormatarCores
             // 
@@ -195,6 +214,22 @@
             this.menuFormatarCores.Name = "menuFormatarCores";
             this.menuFormatarCores.Size = new System.Drawing.Size(194, 36);
             this.menuFormatarCores.Text = "Cores";
+            // 
+            // menuFormatarCoresLetra
+            // 
+            this.menuFormatarCoresLetra.Image = ((System.Drawing.Image)(resources.GetObject("menuFormatarCoresLetra.Image")));
+            this.menuFormatarCoresLetra.Name = "menuFormatarCoresLetra";
+            this.menuFormatarCoresLetra.Size = new System.Drawing.Size(194, 36);
+            this.menuFormatarCoresLetra.Text = "Letra";
+            this.menuFormatarCoresLetra.Click += new System.EventHandler(this.menuFormatarCoresLetra_Click);
+            // 
+            // menuFormatarCoresFundo
+            // 
+            this.menuFormatarCoresFundo.Image = ((System.Drawing.Image)(resources.GetObject("menuFormatarCoresFundo.Image")));
+            this.menuFormatarCoresFundo.Name = "menuFormatarCoresFundo";
+            this.menuFormatarCoresFundo.Size = new System.Drawing.Size(194, 36);
+            this.menuFormatarCoresFundo.Text = "Fundo";
+            this.menuFormatarCoresFundo.Click += new System.EventHandler(this.menuFormatarCoresFundo_Click);
             // 
             // menuFormatarAlinhamento
             // 
@@ -207,36 +242,13 @@
             this.menuFormatarAlinhamento.Size = new System.Drawing.Size(194, 36);
             this.menuFormatarAlinhamento.Text = "Alinhamento";
             // 
-            // menuFormatarCoresLetra
-            // 
-            this.menuFormatarCoresLetra.Image = ((System.Drawing.Image)(resources.GetObject("menuFormatarCoresLetra.Image")));
-            this.menuFormatarCoresLetra.Name = "menuFormatarCoresLetra";
-            this.menuFormatarCoresLetra.Size = new System.Drawing.Size(194, 36);
-            this.menuFormatarCoresLetra.Text = "Letra";
-            // 
-            // menuFormatarCoresFundo
-            // 
-            this.menuFormatarCoresFundo.Image = ((System.Drawing.Image)(resources.GetObject("menuFormatarCoresFundo.Image")));
-            this.menuFormatarCoresFundo.Name = "menuFormatarCoresFundo";
-            this.menuFormatarCoresFundo.Size = new System.Drawing.Size(194, 36);
-            this.menuFormatarCoresFundo.Text = "Fundo";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(191, 6);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(191, 6);
-            // 
             // menuFormatarAlinhamentoEsquerda
             // 
             this.menuFormatarAlinhamentoEsquerda.Image = ((System.Drawing.Image)(resources.GetObject("menuFormatarAlinhamentoEsquerda.Image")));
             this.menuFormatarAlinhamentoEsquerda.Name = "menuFormatarAlinhamentoEsquerda";
             this.menuFormatarAlinhamentoEsquerda.Size = new System.Drawing.Size(194, 36);
             this.menuFormatarAlinhamentoEsquerda.Text = "Esquerda";
+            this.menuFormatarAlinhamentoEsquerda.Click += new System.EventHandler(this.menuFormatarAlinhamentoEsquerda_Click);
             // 
             // menuFormatarAlinhamentoCentro
             // 
@@ -244,6 +256,7 @@
             this.menuFormatarAlinhamentoCentro.Name = "menuFormatarAlinhamentoCentro";
             this.menuFormatarAlinhamentoCentro.Size = new System.Drawing.Size(194, 36);
             this.menuFormatarAlinhamentoCentro.Text = "Centro";
+            this.menuFormatarAlinhamentoCentro.Click += new System.EventHandler(this.menuFormatarAlinhamentoCentro_Click);
             // 
             // menuFormatarAlinhamentoDireita
             // 
@@ -251,6 +264,7 @@
             this.menuFormatarAlinhamentoDireita.Name = "menuFormatarAlinhamentoDireita";
             this.menuFormatarAlinhamentoDireita.Size = new System.Drawing.Size(194, 36);
             this.menuFormatarAlinhamentoDireita.Text = "Direita";
+            this.menuFormatarAlinhamentoDireita.Click += new System.EventHandler(this.menuFormatarAlinhamentoDireita_Click);
             // 
             // rbTexto
             // 
