@@ -174,5 +174,10 @@ namespace My_Notepad
         {
             rbTexto.SelectionAlignment = HorizontalAlignment.Right;
         }
+
+        private void license_Click(object sender, EventArgs e)
+        {
+            DialogResult license = MessageBox.Show("Autor: Gabriel Carvalho \nVersão: 1.0 \n© Todos os direitos reservados a Oak Studios 2024", "Licença", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

@@ -58,6 +58,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.license = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +68,8 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuFicheiro,
             this.menuEditar,
-            this.menuFormatar});
+            this.menuFormatar,
+            this.license});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(784, 37);
@@ -167,7 +169,7 @@
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(153, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(191, 6);
             // 
             // menuEditarSelecionar
             // 
@@ -287,6 +289,17 @@
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // license
+            // 
+            this.license.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.license.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.license.Image = ((System.Drawing.Image)(resources.GetObject("license.Image")));
+            this.license.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.license.Name = "license";
+            this.license.Size = new System.Drawing.Size(34, 34);
+            this.license.Text = "toolStripButton1";
+            this.license.Click += new System.EventHandler(this.license_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,6 +348,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripButton license;
     }
 }
 
