@@ -1,0 +1,7 @@
+Bem-vindo ao My Notepad!
+
+Este é um bloco de notas simples criado em Windows Forms com C# .NET.
+
+Você pode utilizar este espaço para criar, editar e salvar seus textos. Explore as opções de formatação e aproveite a praticidade deste aplicativo.
+
+Obrigado por escolher o My Notepad!

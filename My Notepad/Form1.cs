@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,28 @@ namespace My_Notepad
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void CarregarArquivoTexto()
+        {
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "texto.txt");
+
+            if (File.Exists(filePath))
+            {
+                try
+                {
+                    string content = File.ReadAllText(filePath);
+                    rbTexto.Text = content;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao ler o arquivo: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("O arquivo 'texto.txt' não foi encontrado. O conteúdo do campo de texto não será preenchido.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void menuFicheiroNovo_Click(object sender, EventArgs e)
@@ -179,5 +202,12 @@ namespace My_Notepad
         {
             DialogResult license = MessageBox.Show("Autor: Gabriel Carvalho \nVersão: 1.0 \n© Todos os direitos reservados a Oak Studios 2024", "Licença", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            CarregarArquivoTexto();
+        }
+
+        
     }
 }
