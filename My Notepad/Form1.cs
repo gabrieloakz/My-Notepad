@@ -86,6 +86,7 @@ namespace My_Notepad
             if (resposta == DialogResult.Yes)
             {
                 VerificarAlteracoes();
+                Application.Exit();
             }
         }
 
@@ -123,6 +124,7 @@ namespace My_Notepad
                 rbTexto.SaveFile(ficheiro);
                 rbTexto.Modified = false;
             }
+            
         }
 
         private void menuEditarCortar_Click(object sender, EventArgs e)
@@ -208,6 +210,19 @@ namespace My_Notepad
             CarregarArquivoTexto();
         }
 
-        
+        private void guardarFicheiroTxt_ButtonClick(object sender, EventArgs e)
+        {
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "texto.txt");
+
+            try
+            {
+                File.WriteAllText(filePath, rbTexto.Text);
+                MessageBox.Show("Arquivo salvo com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao salvar o arquivo: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

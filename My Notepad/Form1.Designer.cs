@@ -53,6 +53,7 @@
             this.menuFormatarAlinhamentoCentro = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFormatarAlinhamentoDireita = new System.Windows.Forms.ToolStripMenuItem();
             this.license = new System.Windows.Forms.ToolStripButton();
+            this.guardarFicheiroTxt = new System.Windows.Forms.ToolStripSplitButton();
             this.rbTexto = new System.Windows.Forms.RichTextBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
@@ -69,7 +70,8 @@
             this.menuFicheiro,
             this.menuEditar,
             this.menuFormatar,
-            this.license});
+            this.license,
+            this.guardarFicheiroTxt});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(784, 37);
@@ -279,6 +281,15 @@
             this.license.Text = "toolStripButton1";
             this.license.Click += new System.EventHandler(this.license_Click);
             // 
+            // guardarFicheiroTxt
+            // 
+            this.guardarFicheiroTxt.Image = ((System.Drawing.Image)(resources.GetObject("guardarFicheiroTxt.Image")));
+            this.guardarFicheiroTxt.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.guardarFicheiroTxt.Name = "guardarFicheiroTxt";
+            this.guardarFicheiroTxt.Size = new System.Drawing.Size(158, 34);
+            this.guardarFicheiroTxt.Text = "Guardar Ficheiro Txt";
+            this.guardarFicheiroTxt.ButtonClick += new System.EventHandler(this.guardarFicheiroTxt_ButtonClick);
+            // 
             // rbTexto
             // 
             this.rbTexto.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -350,6 +361,7 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripButton license;
+        private System.Windows.Forms.ToolStripSplitButton guardarFicheiroTxt;
     }
 }
 
