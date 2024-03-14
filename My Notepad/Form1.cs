@@ -202,7 +202,7 @@ namespace My_Notepad
 
         private void license_Click(object sender, EventArgs e)
         {
-            DialogResult license = MessageBox.Show("Autor: Gabriel Carvalho \nVersão: 1.0 \n© Todos os direitos reservados a Oak Studios 2024", "Licença", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult license = MessageBox.Show("Autor: Gabriel Carvalho \nVersão: 2.0 \n© Todos os direitos reservados a Oak Studios 2024", "Licença", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Form1_Load(object sender, EventArgs e)
